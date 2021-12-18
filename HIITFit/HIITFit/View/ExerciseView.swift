@@ -2,21 +2,19 @@ import SwiftUI
 import AVKit
 
 struct ExerciseView: View {
-    let videoNames = ["squat", "step-up", "burpee", "sun-salute"]
-    let exerciseNames = ["Squat", "Step Up", "Burpee", "Sun Salute"]
     let timeInterval = 3.0
     let index: Int
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                HeaderView(titleText: exerciseNames[index])
+                HeaderView(titleText: Exercise.exercises[index].exerciseName)
                     .padding(.bottom)
-                if let exerciseVideoURL = Bundle.main.url(forResource: videoNames[index], withExtension: "mp4") {
+                if let exerciseVideoURL = Bundle.main.url(forResource: Exercise.exercises[index].videoName, withExtension: "mp4") {
                     VideoPlayer(player: AVPlayer(url: exerciseVideoURL))
                         .frame(height: geometry.size.height * 0.45)
                     
                 } else {
-                    Text("Unable to find \(exerciseNames[index])")
+                    Text("Unable to find \(Exercise.exercises[index].exerciseName)")
                         .foregroundColor(.red)
                 }
                 Text(Date().addingTimeInterval(timeInterval), style: .timer)

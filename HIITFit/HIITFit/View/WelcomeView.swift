@@ -9,7 +9,6 @@ struct WelcomeView: View {
                 Button("History") { }
                 .padding(.bottom)
             }
-            
             VStack {
                 HStack(alignment: .bottom) {
                     VStack(alignment: .leading) {

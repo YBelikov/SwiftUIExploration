@@ -12,7 +12,7 @@ struct ContentView: View
     var body: some View {
         TabView {
             WelcomeView()
-            ForEach(0..<4) { tabIndex in
+            ForEach(0..<Exercise.exercises.count) { tabIndex in
                 ExerciseView(index: tabIndex)
             }
         }
