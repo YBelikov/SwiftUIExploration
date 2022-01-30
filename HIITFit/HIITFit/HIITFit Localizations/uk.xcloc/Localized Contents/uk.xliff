@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="en.lproj/HIITFit-InfoPlist.strings" datatype="plaintext" source-language="en" target-language="uk">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.1" build-num="13A1030d"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>HIITFit</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="HIITFit/en.lproj/Localizable.strings" source-language="en" target-language="uk" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.1" build-num="13A1030d"/>
+    </header>
+    <body>
+      <trans-unit id="Burpee" xml:space="preserve">
+        <source>Burpee</source>
+        <target>Burpee</target>
+        <note>exercise</note>
+      </trans-unit>
+      <trans-unit id="Continue" xml:space="preserve">
+        <source>Continue</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Get fit" xml:space="preserve">
+        <source>Get fit</source>
+        <target>Почніть вправи</target>
+        <note>invitation to start exercises</note>
+      </trans-unit>
+      <trans-unit id="Get started" xml:space="preserve">
+        <source>Get started</source>
+        <target>Розпочати</target>
+        <note>invitation</note>
+      </trans-unit>
+      <trans-unit id="History" xml:space="preserve">
+        <source>History</source>
+        <target>Історія</target>
+        <note>view user activity</note>
+      </trans-unit>
+      <trans-unit id="Squat" xml:space="preserve">
+        <source>Squat</source>
+        <target>Squat</target>
+        <note>exercise</note>
+      </trans-unit>
+      <trans-unit id="Start/Done" xml:space="preserve">
+        <source>Start/Done</source>
+        <target>Почати/Виконано</target>
+        <note>start exercise / mark as done</note>
+      </trans-unit>
+      <trans-unit id="Step up" xml:space="preserve">
+        <source>Step up</source>
+        <target>Step up</target>
+        <note>exercise</note>
+      </trans-unit>
+      <trans-unit id="Sun salute" xml:space="preserve">
+        <source>Sun salute</source>
+        <target>Sun salute</target>
+        <note>yoga stretch pose</note>
+      </trans-unit>
+      <trans-unit id="Unable to find %@" xml:space="preserve">
+        <source>Unable to find %@</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Welcome" xml:space="preserve">
+        <source>Welcome</source>
+        <target>Ласкаво просимо</target>
+        <note>greeting</note>
+      </trans-unit>
+      <trans-unit id="with high intensity training" xml:space="preserve">
+        <source>with high intensity training</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

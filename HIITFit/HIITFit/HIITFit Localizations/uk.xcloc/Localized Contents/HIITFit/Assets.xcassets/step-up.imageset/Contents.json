@@ -1,0 +1,17 @@
+{
+  "images" : [
+    {
+      "locale" : "uk",
+      "idiom" : "universal",
+      "filename" : "step-up_uk.png",
+      "scale" : "1x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "localizable" : true
+  }
+}

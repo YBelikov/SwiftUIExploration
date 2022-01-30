@@ -4,15 +4,15 @@ struct WelcomeView: View {
     var body: some View {
         ZStack {
             VStack {
-                HeaderView(titleText: "Welcome")
+                HeaderView(titleText: NSLocalizedString("Welcome", comment: "greeting"))
                 Spacer()
-                Button("History") { }
+                Button(NSLocalizedString("History", comment: "view user activity")) { }
                 .padding(.bottom)
             }
             VStack {
                 HStack(alignment: .bottom) {
                     VStack(alignment: .leading) {
-                        Text("Get fit")
+                        Text(NSLocalizedString("Get fit", comment: "invitation to start exercises"))
                             .font(.largeTitle)
                         Text("with high intensity training")
                             .font(.headline)
@@ -23,7 +23,7 @@ struct WelcomeView: View {
                         .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                 }
                 Button(action: {}) {
-                    Text("Get started")
+                    Text(NSLocalizedString("Get started", comment: "invitation"))
                     Image(systemName: "arrow.right.circle")
                 }
                 .font(.title2)
