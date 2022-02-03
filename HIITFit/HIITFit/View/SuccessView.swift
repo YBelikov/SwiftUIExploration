@@ -1,14 +1,19 @@
 import SwiftUI
 
 struct SuccessView: View {
+    @Binding var selectedTab: Int
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
             ExerciseCompletionView()
             VStack {
                 Spacer()
-                Button("Continue") {}
-                    .font(.title2)
-                    .padding()
+                Button("Continue") {
+                    presentationMode.wrappedValue.dismiss()
+                    selectedTab = 9
+                }
+                .font(.title2)
+                .padding()
             }
         }
     }
@@ -16,7 +21,7 @@ struct SuccessView: View {
 
 struct SuccessView_Previews: PreviewProvider {
     static var previews: some View {
-        SuccessView()
+        SuccessView(selectedTab: .constant(3))
     }
 }
 

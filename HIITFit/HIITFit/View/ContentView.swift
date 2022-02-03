@@ -1,19 +1,12 @@
-//
-//  ContentView.swift
-//  HIITFit
-//
-//  Created by user on 12/12/21.
-//
-
 import SwiftUI
 
-struct ContentView: View
-{
+struct ContentView: View {
+    @State var selectedTab = 9
     var body: some View {
-        TabView {
-            WelcomeView()
+        TabView(selection: $selectedTab) {
+            WelcomeView(selectedTab: $selectedTab).tag(9)
             ForEach(0..<Exercise.exercises.count) { tabIndex in
-                ExerciseView(index: tabIndex)
+                ExerciseView(index: tabIndex, selectedTab: $selectedTab).tag(tabIndex)
             }
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
